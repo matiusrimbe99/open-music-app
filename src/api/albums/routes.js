@@ -4,14 +4,11 @@ const routes = (handler) => [
     path: '/albums',
     handler: handler.postAlbumHandler,
   },
-  // {
-  //   method: 'GET',
-  //   path: '/notes',
-  //   handler: handler.getNotesHandler,
-  //   options: {
-  //     auth: 'notesapp_jwt',
-  //   },
-  // },
+  {
+    method: 'GET',
+    path: '/albums/{id}',
+    handler: handler.getAlbumByIdHandler,
+  },
   // {
   //   method: 'GET',
   //   path: '/notes/{id}',
