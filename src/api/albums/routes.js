@@ -9,30 +9,16 @@ const routes = (handler) => [
     path: '/albums/{id}',
     handler: handler.getAlbumByIdHandler,
   },
-  // {
-  //   method: 'GET',
-  //   path: '/notes/{id}',
-  //   handler: handler.getNoteByIdHandler,
-  //   options: {
-  //     auth: 'notesapp_jwt',
-  //   },
-  // },
-  // {
-  //   method: 'PUT',
-  //   path: '/notes/{id}',
-  //   handler: handler.putNoteByIdHandler,
-  //   options: {
-  //     auth: 'notesapp_jwt',
-  //   },
-  // },
-  // {
-  //   method: 'DELETE',
-  //   path: '/notes/{id}',
-  //   handler: handler.deleteNoteByIdHandler,
-  //   options: {
-  //     auth: 'notesapp_jwt',
-  //   },
-  // },
+  {
+    method: 'PUT',
+    path: '/albums/{id}',
+    handler: handler.putAlbumByIdHandler,
+  },
+  {
+    method: 'DELETE',
+    path: '/albums/{id}',
+    handler: handler.deleteAlbumByIdHandler,
+  },
   // {
   //   method: 'GET',
   //   path: '/users',
